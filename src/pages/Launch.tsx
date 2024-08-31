@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { TimerCard } from "../components";
+import Blob1 from "../assets/blob1.svg";
+import Blob2 from "../assets/blob2.svg";
+import LightRocket1 from "../assets/light-rocket-1.svg";
 
 export const Launch = () => {
   const [_timerDidEnd, setTimerDidEnd] = useState(false);
 
   return (
     <>
-      <img src="src/assets/blob1.svg" id="blob1" className="blob" />
-      <img src="src/assets/blob2.svg" id="blob2" className="blob" />
+      <img src={Blob1} id="blob1" className="blob" />
+      <img src={Blob2} id="blob2" className="blob" />
       <div id="launch" className="poppins-regular">
         <div className="flex-col justify-center align-center">
           <div className="flex-row justify-center align-center">
-            <img src="src/assets/light-rocket-1.svg" className="logo" />
+            <img src={LightRocket1} className="logo" />
             <h1 id="title">Launching New Module Soon!</h1>
           </div>
           <h3 id="desc">
