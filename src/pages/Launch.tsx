@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LiveNowModal, TimerCard } from "../components";
+import { LiveNowModal, Notify, TimerCard } from "../components";
 import LightRocket1 from "../assets/light-rocket-1.svg";
 
 export const Launch = () => {
@@ -32,13 +32,7 @@ export const Launch = () => {
                 Be the first to know! Share your email and We'll notify you when
                 it's live
               </p>
-              <div id="notify">
-                <input
-                  id="input-mail"
-                  placeholder="Please enter your email id"
-                />
-                <button id="notify-button">Notify Me</button>
-              </div>
+              <Notify />
             </div>
           </>
         )}

@@ -115,7 +115,7 @@
   border: 0px;
   font-size: 30px;
   background-color: #0f0f0f;
-  color: #ffffff80;
+  color: #ffffff;
   margin: 0;
   padding-inline: 1em;
 }
@@ -258,6 +258,12 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1em;
+}
+
+#tick {
+  content: url("/tick-light.svg");
+  height: 1em;
+  margin-top: 0.3em;
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
