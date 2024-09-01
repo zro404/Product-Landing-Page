@@ -25,6 +25,27 @@
   gap: 4em;
 }
 
+#livenow-modal {
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 4em;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(99.57deg, #e6b8d9 1%, #c9b8e6 100.1%);
+  gap: 4em;
+  width: 60%;
+}
+
+#questions {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
 #timer-card {
   height: 11em;
   border-radius: 30px;
@@ -98,6 +119,9 @@ p {
 .font-regular {
   font-weight: 400;
 }
+.font-semibold {
+  font-weight: 600;
+}
 
 .logo {
   height: 70px;
@@ -128,11 +152,31 @@ p {
   padding-right: 1em;
 }
 
+#getstarted-button {
+  font-family: "Poppins", sans-serif;
+  /* height: 2.3em; */
+  width: 8em;
+  border-radius: 8px;
+  border: 0px;
+  font-size: 30px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
 #title {
   background: linear-gradient(90.04deg, #0f0f0f 0.11%, #333333 98.77%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#livenow-text {
+  float: left;
+  clear: left;
 }
 
 .gap-1 {
@@ -150,9 +194,15 @@ p {
 }
 
 #blob1 {
-  right: -5em;
+  right: -3em;
 }
 
 #blob2 {
   left: -5em;
+}
+
+#livenow-desc {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  margin: auto;
 }
