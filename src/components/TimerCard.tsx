@@ -12,7 +12,7 @@ interface TimerCardProps {
 
 export const TimerCard = ({ setTimerDidEnd }: TimerCardProps) => {
   const [timeLeft, setTimeLeft] = useState<Time>({
-    hours: 0,
+    hours: 1,
     minutes: 0,
     seconds: 9,
   });
@@ -39,8 +39,11 @@ export const TimerCard = ({ setTimerDidEnd }: TimerCardProps) => {
     <div id="timer-card">
       {timeLeft.hours > 0 ? (
         <>
-          <div className="flex-col">
-            <h1 className="font-medium">{timeLeft.hours}</h1>
+          <div>
+            <h1 className="font-medium">
+              {timeLeft.hours > 9 ? "" : "0"}
+              {timeLeft.hours}
+            </h1>
             <h3>Hours</h3>
           </div>
           <h1 className="font-regular">:</h1>
@@ -48,13 +51,19 @@ export const TimerCard = ({ setTimerDidEnd }: TimerCardProps) => {
       ) : (
         <></>
       )}
-      <div className="flex-col">
-        <h1 className="font-medium">{timeLeft.minutes}</h1>
+      <div>
+        <h1 className="font-medium">
+          {timeLeft.minutes > 9 ? "" : "0"}
+          {timeLeft.minutes}
+        </h1>
         <h3>Minutes</h3>
       </div>
       <h1 className="font-regular">:</h1>
-      <div className="flex-col">
-        <h1 className="font-medium">{timeLeft.seconds}</h1>
+      <div>
+        <h1 className="font-medium">
+          {timeLeft.seconds > 9 ? "" : "0"}
+          {timeLeft.seconds}
+        </h1>
         <h3>Seconds</h3>
       </div>
     </div>

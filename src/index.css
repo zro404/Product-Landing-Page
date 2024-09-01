@@ -12,13 +12,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  margin: 0;
-}
-
 body {
-  height: 100vh;
   overflow: hidden;
+  margin: 0;
 }
 
 .montserrat {
@@ -27,7 +23,6 @@ body {
   font-weight: 600;
   font-style: normal;
   letter-spacing: 2.05px;
-  font-size: 20px;
 }
 
 .poppins-regular {
