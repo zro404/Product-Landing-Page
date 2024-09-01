@@ -1,6 +1,10 @@
 import Arrow from "../assets/arrow.svg";
+import { Header } from "../components";
 export const Questions = () => (
-  <div id="questions">
-    <img src={Arrow} id="arrow-to-top" />
-  </div>
+  <>
+    <Header darkTheme={true} />
+    <div id="questions">
+      <img src={Arrow} id="arrow-to-top" />
+    </div>
+  </>
 );

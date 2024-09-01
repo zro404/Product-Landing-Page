@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LiveNowModal, Notify, TimerCard } from "../components";
+import { Header, LiveNowModal, Notify, TimerCard } from "../components";
 import LightRocket1 from "../assets/light-rocket-1.svg";
 
 export const Launch = () => {
@@ -7,6 +7,7 @@ export const Launch = () => {
 
   return (
     <>
+      <Header />
       <img id="blob1" className="blob" />
       <img id="blob2" className="blob" />
       <div id="launch" className="poppins-regular">

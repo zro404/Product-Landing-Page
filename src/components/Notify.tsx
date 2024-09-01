@@ -11,7 +11,7 @@ export const Notify = () => {
   const [mail, setMail] = useState("");
   const [isMailAccepted, setIsMailAccepted] = useState(MailStatus.IDLE);
 
-  const isGmailAddress = (email) =>
+  const isGmailAddress = (email: string) =>
     /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(email);
 
   const handleClick = () => {
