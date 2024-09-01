@@ -1,6 +1,6 @@
 #root {
   height: 100vh;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
   position: relative;
   display: flex;
@@ -9,8 +9,7 @@
   justify-content: center;
 }
 
-#App {
-  position: relative;
+#livenow {
 }
 
 #header {
@@ -25,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 100%;
   gap: 4em;
 }
 
@@ -42,6 +41,7 @@
   background: linear-gradient(99.57deg, #e6b8d9 1%, #c9b8e6 100.1%);
   gap: 4em;
   width: 60%;
+  margin: auto;
 }
 
 #questions {
@@ -155,15 +155,26 @@
 .blob {
   position: absolute;
   z-index: -1;
-  filter: blur(200px);
+  filter: blur(150px);
+  margin: 0;
+  padding: 0;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 #blob1 {
-  right: -3em;
+  content: url("/ldblob1.svg");
+  animation-name: blob1-anim;
+  right: -12em;
+  bottom: -10em;
 }
 
 #blob2 {
-  left: -5em;
+  left: -10em;
+  top: -10em;
+  content: url("/ldblob2.svg");
+  animation-name: blob2-anim;
 }
 
 #livenow-desc {
@@ -172,11 +183,15 @@
   margin: auto;
 }
 
+#questions {
+  height: 100%;
+  width: 100%;
+  background: #0f0f0f;
+}
+
 #arrow-to-top {
-  height: 5em;
-  position: absolute;
-  bottom: 1rem;
-  right: 0;
+  height: 4em;
+  margin: 2em;
 }
 
 h1 {
@@ -337,5 +352,46 @@ p {
     font-weight: 5px;
     padding-top: 5px;
     padding-bottom: 6px;
+  }
+
+  .blob {
+    filter: blur(100px);
+  }
+
+  #blob1 {
+    right: -2em;
+    bottom: -17em;
+    content: url("/mblob1.svg");
+  }
+
+  #blob2 {
+    left: 0em;
+    top: 0em;
+    content: url("/mblob2.svg");
+  }
+
+  #livenow-modal {
+    min-width: 80%;
+    padding: 1em;
+    padding-bottom: 2em;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(99.57deg, #e6b8d9 1%, #c9b8e6 100.1%);
+    gap: 3em;
+  }
+
+  #getstarted-button {
+    font-size: 18px;
+  }
+
+  #livenow-desc {
+    padding: 0;
+    padding-top: 1em;
+  }
+  #arrow-to-top {
+    display: none;
   }
 }

@@ -12,9 +12,9 @@ interface TimerCardProps {
 
 export const TimerCard = ({ setTimerDidEnd }: TimerCardProps) => {
   const [timeLeft, setTimeLeft] = useState<Time>({
-    hours: 1,
+    hours: 0,
     minutes: 0,
-    seconds: 9,
+    seconds: 0,
   });
 
   useEffect(() => {

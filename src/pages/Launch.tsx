@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { LiveNowModal, TimerCard } from "../components";
-import Blob1 from "../assets/blob1.svg";
-import Blob2 from "../assets/blob2.svg";
 import LightRocket1 from "../assets/light-rocket-1.svg";
 
 export const Launch = () => {
@@ -9,8 +7,8 @@ export const Launch = () => {
 
   return (
     <>
-      {/* <img src={Blob1} id="blob1" className="blob" />
-      <img src={Blob2} id="blob2" className="blob" /> */}
+      <img id="blob1" className="blob" />
+      <img id="blob2" className="blob" />
       <div id="launch" className="poppins-regular">
         {timerDidEnd ? (
           <LiveNowModal />
