@@ -7,6 +7,8 @@ export const LiveNowModal = () => (
         for you to explore. Go ahead and give it a try
       </h3>
     </div>
-    <button id="getstarted-button">Get Started</button>
+    <a id="getstarted-button" href="/questions">
+      Get Started
+    </a>
   </div>
 );

@@ -5,9 +5,11 @@
 }
 
 #App {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -20,8 +22,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95%;
-  max-width: 80%;
+  /* height: 95%; */
+  /* max-width: 80%; */
+  height: auto;
   gap: 4em;
 }
 
@@ -72,6 +75,7 @@
 
 .header-logo {
   gap: 0.5rem;
+  text-decoration: none;
 }
 
 .bg-black {
@@ -154,7 +158,7 @@ p {
 
 #getstarted-button {
   font-family: "Poppins", sans-serif;
-  /* height: 2.3em; */
+  text-decoration: none;
   width: 8em;
   border-radius: 8px;
   border: 0px;
@@ -205,4 +209,11 @@ p {
   padding-left: 2.5em;
   padding-right: 2.5em;
   margin: auto;
+}
+
+#arrow-to-top {
+  height: 5em;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
 }
